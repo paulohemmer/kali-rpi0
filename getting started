@@ -1,0 +1,19 @@
+1- Download Kali Linux for Raspberry Pi Zero
+    https://www.kali.org/get-kali/#kali-arm
+    
+2- Install using Rufus
+    https://www.kali.org/docs/arm/raspberry-pi-zero-w/
+    
+3- First time boot disable the GUI
+    sudo systemctl set-default multi-user.target
+    sudo reboot now
+    
+4- Resize the partition so that it uses the whole SD card
+    sudo kalipi-config
+    
+5- Connect to WiFi
+    nmcli -d wifi connect network-ssid password network-password
+    
+6- Update and upgrade
+    sudo apt update
+    sudo apt upgrade
